@@ -1,14 +1,14 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.cpp
-// This is the base class for all <sensor>s
+// dataStore.cpp
+// This is the base class for all DataStore's
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#include "sensor.h"
+#include "dataStore.h"
 
-Sensor::Sensor() {}
+DataStore::DataStore() {}
 
-Sensor::~Sensor() {}
+DataStore::~DataStore() {}
 

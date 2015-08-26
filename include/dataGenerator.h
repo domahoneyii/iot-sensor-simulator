@@ -1,23 +1,22 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.h
-// This is the base class for all <sensor>s
+// DataGenerator.h
+// This is the base class for all DataGenerators
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#ifndef sensor_H
-#define sensor_H
+#ifndef DataGenerator_H
+#define DataGenerator_H
 
 // include directives
 
 // declarations
 
-class Sensor {
+class DataGenerator {
 public:
-    Sensor();
-    ~Sensor();
-
+    DataGenerator();
+    ~DataGenerator();
 };
 
 #endif

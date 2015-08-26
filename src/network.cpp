@@ -1,14 +1,14 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.cpp
-// This is the base class for all <sensor>s
+// network.cpp
+// This is the base class for all Network's
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#include "sensor.h"
+#include "network.h"
 
-Sensor::Sensor() {}
+Network::Network() {}
 
-Sensor::~Sensor() {}
+Network::~Network() {}
 

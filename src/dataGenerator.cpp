@@ -1,14 +1,14 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.cpp
-// This is the base class for all <sensor>s
+// dataGenerator.cpp
+// This is the base class for all DataGenerator's
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#include "sensor.h"
+#include "dataGenerator.h"
 
-Sensor::Sensor() {}
+DataGenerator::DataGenerator() {}
 
-Sensor::~Sensor() {}
+DataGenerator::~DataGenerator() {}
 

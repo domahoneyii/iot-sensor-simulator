@@ -1,21 +1,32 @@
 CC := g++ # This is the main compiler
 
+# Directories
 SRCDIR := src
 BUILDDIR := build
-TARGET := bin/simulator
+LIBDIR := lib
 
+# Targets
+TARGET := lib/simulator.so # libary for inclusion in other programs
+
+# compile and link info
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS := -g
-LIB := -pthread
+
+# Flags and includes
+LFLAGS := -shared -fpPIC
+CFLAGS := -g -fPIC
+CLIB := -pthread
 INC := -I include
 
+# Link executable target
 $(TARGET): $(OBJECTS)
-	@echo " Linking..."
-	@echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $^ -o $(TARGET) $(LIB)
+	@echo " Building library"
+	@echo " $(CC) $(LFLAGS) $^ -o $(TARGET) "; $(CC) $(LFLAGS) $^ -o $(TARGET)
 
+# Compile target
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
+	@echo "Compiling"
 	@mkdir -p $(BUILDDIR)
 	@echo " $(CC) $(CFLAGS) $(INC) -c -o $@ $<"; $(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
@@ -26,9 +37,5 @@ clean:
 # Tests
 tester:
 	$(CC) $(CFLAGS) test/tester.cpp $(INC) $(LIB) -o bin/tester
-
-# Spikes
-ticket:
-	$(CC) $(CFLAGS) spikes/ticket.cpp $(INC) $(LIB) -o bin/ticket
 
 .PHONY: clean
