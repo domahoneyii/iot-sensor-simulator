@@ -1,23 +1,24 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.h
-// This is the base class for all <sensor>s
+// NetworkHandler.h
+// This is the base class for all NetworkHandlers
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#ifndef sensor_H
-#define sensor_H
+#ifndef NetworkHandler_H
+#define NetworkHandler_H
 
 // include directives
 
 // declarations
 
-class Sensor {
+class NetworkHandler {
 public:
-    Sensor();
-    ~Sensor();
+    NetworkHandler();
+    ~NetworkHandler();
 
 };
+
 
 #endif

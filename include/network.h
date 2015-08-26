@@ -1,23 +1,22 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.h
-// This is the base class for all <sensor>s
+// <Network>.h
+// This is the base class for all <Network>s
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#ifndef sensor_H
-#define sensor_H
+#ifndef Network_H
+#define Network_H
 
 // include directives
 
 // declarations
 
-class Sensor {
+class Network {
 public:
-    Sensor();
-    ~Sensor();
-
+    Network();
+    ~Network();
 };
 
 #endif

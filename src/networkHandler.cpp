@@ -1,14 +1,14 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.cpp
-// This is the base class for all <sensor>s
+// <NetworkHandler>.cpp
+// This is the base class for all <NetworkHandler>s
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#include "sensor.h"
+#include "networkHandler.h"
 
-Sensor::Sensor() {}
+NetworkHandler::NetworkHandler() {}
 
-Sensor::~Sensor() {}
+NetworkHandler::~NetworkHandler() {}
 

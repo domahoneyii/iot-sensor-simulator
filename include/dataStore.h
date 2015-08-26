@@ -1,23 +1,22 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.h
-// This is the base class for all <sensor>s
+// <DataStore>.h
+// This is the base class for all <DataStore>s
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#ifndef sensor_H
-#define sensor_H
+#ifndef DataStore_H
+#define DataStore_H
 
 // include directives
 
 // declarations
 
-class Sensor {
+class DataStore {
 public:
-    Sensor();
-    ~Sensor();
-
+    DataStore();
+    ~DataStore();
 };
 
 #endif

@@ -1,14 +1,13 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.cpp
-// This is the base class for all <sensor>s
+// sandbox.cpp
+// This is the base class for all <andbox's
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#include "sensor.h"
+#include "sandbox.h"
 
-Sensor::Sensor() {}
+Sandbox::Sandbox() {}
 
-Sensor::~Sensor() {}
-
+Sandbox::~Sandbox() {}

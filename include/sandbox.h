@@ -1,23 +1,22 @@
 // ---------------------------------------------------------------------------
 //
-// <sensor>.h
-// This is the base class for all <sensor>s
+// <Sandbox>.h
+// This is the base class for all <Sandbox>s
 //
 //
 // Author: Dan Mahoney
 // ---------------------------------------------------------------------------
-#ifndef sensor_H
-#define sensor_H
+#ifndef Sandbox_H
+#define Sandbox_H
 
 // include directives
 
 // declarations
 
-class Sensor {
+class Sandbox {
 public:
-    Sensor();
-    ~Sensor();
-
+    Sandbox();
+    ~Sandbox();
 };
 
 #endif
